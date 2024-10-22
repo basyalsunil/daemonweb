@@ -17,6 +17,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
+                mkdir -p /var/www/html/daemonweb/
                 cp -r * /var/www/html/daemonweb/
                 '''
             }
